@@ -74,9 +74,21 @@ nav {
     background-color: white;
     align-items: center;
     justify-content: space-between;
+    padding: 2%;
 }
 .container{
     background-color: aliceblue;
     margin: 1%;
 
+}
+div img{
+    max-width: 98%;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    justify-self: center;
+    display: flex;
+}
+h1 {
+    text-align: center;
 }
