@@ -3,114 +3,320 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 /* css reset ends */
+body {
+  max-width: 1024px;
+  margin: auto;
+  background-color: aliceblue;
+}
 
-body{
-    background-color: yellowgreen;
+nav h1 a {
+  text-decoration: none;
+  color: black;
 }
-h1{
-    font-size: 8rem;
-    font-family: "Lobster", cursive;
-    text-align: center;
+h1 {
+  display: flex;
+  font-size: 6rem;
+  font-family: "Lobster", cursive;
+  justify-content: center;
+  flex-grow: 1;
 }
-h2{
-    font-size: 8rem;
-    font-family: "Caveat", cursive;
-    text-align: center;
-    font-weight: bold;
+h2 {
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  font-weight: bold;
 }
-nav img{
-    display: flex;
-    width: 30%;
-}
-nav a{
-    display: flex;
-    font-size: 30px;
-    align-content: center;
-    text-decoration: none;
-    color:black;
-    background-color: rgb(80, 220, 255);
-    padding: 4%;
-    border-radius: 20%;
-    flex: 1 1 0px;
-    justify-content: center;
-    max-width: 15%; 
+nav div a {
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  color: black;
+  /* background-color: rgb(80, 220, 255); */
+  background-color: yellowgreen;
+  padding: 6% 0;
+  width: 100%;
+  margin: auto 5%;
+  border-radius: 100px;
+  flex: 1 1 0px;
 }
 
 nav {
-    display: flex;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2%;
-    text-align: center;
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: solid;
 }
-.container{
-    background-color: aliceblue;
-    margin: 1%;
-    border-radius: 5%;
-    padding: 2%;
+nav h1,
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 48%;
+}
 
+.container {
+  background-color: aliceblue;
+  margin: 1% auto;
+  border-radius: 5%;
+  padding: 2%;
+  width: 100%;
 }
-div img{
-    max-width: 98%;
+div img {
+  max-width: 98%;
+  padding: auto;
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  border-radius: 5%;
+}
+
+p {
+  font-family: "Caveat", cursive;
+}
+footer {
+  background-color: bisque;
+  padding: 5%;
+  margin-top: 5%;
+}
+#cDiv1 {
+  display: flex;
+}
+#cDiv1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cDiv1 div h2 {
+  display: flex;
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  width: 60%;
+  text-align: center;
+  justify-content: right;
+  line-height: normal;
+}
+#cDiv1 img {
+  display: flex;
+  width: 60%;
+  margin: 5%;
+}
+#cDiv2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#cDiv2 div {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  text-align: justify;
+  margin: auto;
+}
+#cDiv2 div p {
+  margin-top: 15%;
+}
+
+#cDiv2 img {
+  display: flex;
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 800px) {
+  #cDiv1 div h2 {
+    width: 80%;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  nav div a {
+    font-size: 1rem;
+
+    padding: 6% 0;
+    width: 100%;
+    margin: auto 5%;
+    border-radius: 100px;
+    flex: 1 1 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav h1,
+  nav div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #cDiv1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #cDiv1 img {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+  }
+  #cDiv2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #cDiv2 img {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    order: 2;
+  }
+  #cDiv2 div {
+    display: flex;
+    width: 92%;
+    flex-direction: row;
+    text-align: justify;
     margin: auto;
-    padding: auto;
-    justify-content: center;
-    justify-self: center;
-    display: flex;
-    border-radius: 5%;
+    order: 1;
+    align-items: center;
+  }
+  #cDiv2 div p {
+    text-align: center;
+    align-self: center;
+    width: 80%;
+  }
+  #cDiv2 div h2 {
+    align-self: center;
+  }
 }
-
-p{
-    font-family: 'Times New Roman', Times, serif;
-}
-footer{
-    background-color: bisque;
-    padding: 5%;
-    margin-top: 5%;
-}
-
