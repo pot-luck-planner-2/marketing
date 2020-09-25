@@ -161,7 +161,7 @@ nav div a {
 
   color: black;
   /* background-color: rgb(80, 220, 255); */
-  background-color: yellowgreen;
+  background-color: rgb(80, 220, 255);
   padding: 6% 0;
   width: 100%;
   margin: auto 5%;
@@ -207,10 +207,15 @@ p {
   font-family: "Caveat", cursive;
 }
 footer {
-  background-color: bisque;
+  background-color: rgba(255, 228, 196, 0.198);
   padding: 5%;
   margin-top: 5%;
   text-align: center;
+}
+footer p a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
 }
 /* c div means container div. cdiv1 for upper, cdiv2 for lower div on main page */
 #cDiv1 {
@@ -258,7 +263,8 @@ footer {
   display: flex;
   width: 60%;
 }
-#mtContainer {
+
+#mtcImg {
   position: relative;
   text-align: center;
   max-width: 70%;
@@ -319,6 +325,13 @@ h4 {
     border-radius: 100px;
     flex: 1 1 0px;
   }
+  .imgTxt {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -367,5 +380,21 @@ h4 {
   #mtList div img {
     max-width: 25%;
     margin: auto;
+  }
+  .imgTxt {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .imgTxt {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    font-size: 2rem;
   }
 }
