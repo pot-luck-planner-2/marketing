@@ -311,6 +311,12 @@ h4 {
   font-size: 1rem;
   color: slategrey;
 }
+
+.socialDiv {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 800px) {
@@ -412,5 +418,11 @@ h4 {
     top: 25%;
     left: 0%;
     font-size: 2rem;
+  }
+
+  .socialDiv {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
   }
 }
