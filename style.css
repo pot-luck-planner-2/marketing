@@ -210,7 +210,9 @@ footer {
   background-color: bisque;
   padding: 5%;
   margin-top: 5%;
+  text-align: center;
 }
+/* c div means container div. cdiv1 for upper, cdiv2 for lower div on main page */
 #cDiv1 {
   display: flex;
 }
@@ -249,11 +251,55 @@ footer {
 }
 #cDiv2 div p {
   margin-top: 15%;
+  font-size: 1.5rem;
 }
 
 #cDiv2 img {
   display: flex;
   width: 60%;
+}
+#mtContainer {
+  position: relative;
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
+}
+
+.darken {
+  /* filter: brightness(100%); */
+  /* filter: blur(80%); */
+}
+.imgTxt {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 3.5rem;
+}
+.mtListRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3%;
+  border: black double;
+  margin: 3%;
+}
+#mtList div img {
+  max-width: 20%;
+}
+.mtBio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1rem;
+  color: slategrey;
 }
 @media screen and (max-width: 1024px) {
 }
@@ -309,7 +355,6 @@ footer {
     text-align: justify;
     margin: auto;
     order: 1;
-    align-items: center;
   }
   #cDiv2 div p {
     text-align: center;
@@ -318,5 +363,9 @@ footer {
   }
   #cDiv2 div h2 {
     align-self: center;
+  }
+  #mtList div img {
+    max-width: 25%;
+    margin: auto;
   }
 }
